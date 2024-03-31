@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Attestation</title>
+    <style>
+        body{
+            background-color: #f1f8ff
+        }
+        .navbar{
+            background-color:#0F172B;
+            justify-content: space-between;
+            font-size: 10px;
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+        }
+        .drop{
+            position: relative;
+            top: 7px;
+        }
+        *{
+            font-family: sans-serif;
+        }
+        .navitem{
+            color: white;
+        }
+        .navitem:hover{
+            color: #FEA116;
+        }
+        .arrow{
+            position: fixed;
+            top: 90%;
+            left: 90%;
+            z-index: 100;
+        }
+        #in{
+            position: relative;
+            top: 30px;
+            border-radius: 50%;
+            width: 11px;
+            height: 11px;
+            border: 1px solid;
+        }
+        #in.active {
+            border: 1px solid #FEA116;
+            background-color:#FEA116 ;
+        }
+        .path{
+            background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(image/bg-hero.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @media screen and (max-width:768px) {
+            .navbar{
+                position: relative;
+                
+            }
+            body{
+                color: #ffffff;
+            }
+            .inside{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="m-0" style="color: #FEA116;"><i class="fa fa-utensils me-3" style="color: #FEA116;"></i>Restoran</h1>
+        </a>
+        <button class="navbar-toggler" style="color: white;"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars" style="color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="index.html" class="navitem nav-item nav-link">DOMICILE</a>
+                <a href="Environ.html" class="navitem nav-item nav-link">ENVIRON</a>
+                <a href="service.html" class="navitem nav-item nav-link">SERVICE</a>
+                <a href="menu.html" class="navitem nav-item nav-link">MENU</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="navitem nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: #FEA116;">PAGES</a>
+                    <div class="dropdown-menu text-white m-0">
+                        <a href="reservation.html" class="dropdown-item">Reservation</a>
+                        <a href="equipe.html" class="dropdown-item">Notre equipe</a>
+                        <a href="attestation.html" class="dropdown-item text-white" style="background-color: #FEA116;">Attestation</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="navitem nav-item nav-link">CONTACT</a>
+            </div>
+            <a href="" class="btn py-2 px-4 text-white"style="background-color: #FEA116;">RESERVER UNE TABLE</a>
+        </div>
+    </nav>
+    <div class="path container-fluid p-5 text-center">
+        <h1 class="text-white" style="font-family: Arial, Helvetica, sans-serif;font-weight: bold">Attestation</h1>
+        <div class="d-flex justify-content-center text-white"><a href="index.html" style="font-size: 11px;color: #FEA116;">DOMICILE</a>
+            <p style="font-size: 11px;">&nbsp&nbsp/&nbsp&nbsp</p>
+            <a href="#" style="font-size: 11px;color: #FEA116;">PAGES</a>
+            <p style="font-size: 11px;">&nbsp&nbsp/&nbsp&nbsp</p>
+            <a href="#" style="font-size: 11px;color: #ffffff;">ATTESTATION</a>
+        </div>
+    </div>
+    <div class="container">
+        <p class="pt-3" style="font-family: 'Pacifico', cursive;color: #FEA116;font-weight: 1000;" align="center"><s>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</s> Attestation <s>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</s></p>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;color: black;" align="center">L'avis de nos clients !!</h1>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" id="in" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" id="in" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" id="in" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" id="in" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row d-flex justify-content-center">
+                        <div class="inside col-md-3 m-1 card p-4 text-dark">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #FEA116;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-4.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 m-1 card p-4 text-white" style="background-color: #FEA116;">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #ffffff;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-1.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside col-md-3 m-1 card p-4 text-dark">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #FEA116;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-2.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="inside col-md-3 m-1 card p-4 text-dark">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #FEA116;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-1.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 m-1 card p-4 text-white" style="background-color: #FEA116;">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #ffffff;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-2.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside col-md-3 m-1 card p-4 text-dark">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #FEA116;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-3.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="inside col-md-3 m-1 card p-4 text-dark">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #FEA116;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-2.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 m-1 card p-4 text-white" style="background-color: #FEA116;">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #ffffff;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-3.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside col-md-3 m-1 card p-4 text-dark">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #FEA116;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-4.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="inside col-md-3 m-1 card p-4 text-dark">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #FEA116;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-3.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 m-1 card p-4 text-white" style="background-color: #FEA116;">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #ffffff;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-4.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside col-md-3 m-1 card p-4 text-dark">
+                            <i class="fa fa-quote-left fa-2x mb-3" style="color: #FEA116;"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="image/attestation-1.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="arrow btn" href="#reservation" style="background-color: #FEA116;"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></a>
+    <div class="container-fluid text-light pt-5 pb-5 mt-5" style="background-color: #0F172B;">
+        <div class="row g-5">
+            <div class="col-md-3">
+                <h4 class="section-title ff-secondary text-start mb-4 ms-3" style="font-family: 'Pacifico', cursive;color: #FEA116;">Compagnie <s style="position: relative;bottom: 3px;">&nbsp&nbsp&nbsp&nbsp</s></h4>
+                <a href="" class="btn  text-light" >> Qui Sommes-Nous</a><br>
+                <a href="" class="btn btn-link-light text-light">> Contactez-Nous</a><br>
+                <a href="" class="btn btn-link-light text-light">> Reservation</a><br>
+                <a href="" class="btn btn-link-light text-light">> Politique De Confidentialite</a><br>
+                <a href="" class="btn btn-link-light text-light">> Terms Et Condition</a>
+            </div>
+            <div class="col-md-3">
+                <h4 class="section-title text-start mb-4" style="font-family: 'Pacifico', cursive;color: #FEA116;">Contact <s style="position: relative;bottom: 3px;">&nbsp&nbsp&nbsp&nbsp</s></h4>
+                <p class="mb-2" style="margin-top: 30px;"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, Etats-Unis</p>
+                <p class="mb-2" style="margin-top: 16px;"><i class="fa fa-phone me-3"></i>+012 345 67890</p>
+                <p class="mb-2" style="margin-top: 16px;"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social me-1" href="" style="border-radius: 100px;"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social me-1" href="" style="border-radius: 100px;"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social me-1" href="" style="border-radius: 100px;"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social me-1" href="" style="border-radius: 100px;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title text-start mb-4" style="font-family: 'Pacifico', cursive;color: #FEA116;">Ouverture <s style="position: relative;bottom: 3px;">&nbsp&nbsp&nbsp&nbsp</s></h4>
+                <h5 class="text-light" style="margin-top: 30px;">Lundi - Samedi</h5>
+                <p>09h - 21h</p>
+                <h5 class="text-light" style="margin-top: 20px;">Dimanche</h5>
+                <p>10h - 20h</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title text-start mb-4" style="font-family: 'Pacifico', cursive;color: #FEA116;">Bulletin <s style="position: relative;bottom: 3px;">&nbsp&nbsp&nbsp&nbsp</s></h4>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre adresse e-mail">
+                    <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2 text-white" style="background-color: #FEA116;">S'INSCRIRE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

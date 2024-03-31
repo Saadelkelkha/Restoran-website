@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.h3-color{
+    font-family: 'Pacifico', cursive;
+    color: #FEA116;
+    display: flex;
+
+}
+.w1{
+    height: 300px;
+    padding-top: 25%;
+}
+.w2{
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
+.w3{
+    height: 300px;
+    padding-bottom: 25%;
+
+}
+
+.navbar{
+    background-color:#0F172B;
+    justify-content: space-between;
+    font-size: 10px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.drop{
+    position: relative;
+    top: 7px;
+}
+*{
+    font-family: sans-serif;
+}
+.navitem{
+    color: white;
+}
+.navitem:hover{
+    color: #FEA116;
+}
+.col_par1{
+    border-left: 3px solid #FEA116;
+    display: flex;
+    gap: 10px;
+    margin: 0 2%;
+}
+main{
+    padding: 0 1%;
+}
+.path{
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(image/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.path a{
+    text-decoration: none;
+}
+.arrow{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    z-index: 100;
+}
+
+@media screen and (max-width:900px) {
+    .a{
+        display: flex;
+        justify-content: center;
+    }
+    .d15{
+        display: flex;
+    }
+    
+}
+.card-img-top{
+    width: 180px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .08);
+    border: transparent;
+}
+i{
+    color: #FEA116;
+}
+.input1{
+    display: flex;
+    gap: 10px;
+}
+.form-control{
+    border-radius: 0;
+}
+.espace{
+    margin-top: 20px;
+}
+
+
+h6{
+    width: 40%; 
+    text-align: center; 
+    border-bottom: 1px solid #FEA116; ; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    background:#fff; 
+    padding:0 10px; 
+    
+    color: #FEA116; 
+}
+h6 span {
+    background:#fff; 
+    padding:0 10px; 
+    color: #FEA116; 
+    font-family: 'Pacifico', cursive;
+}
+.h6-span{
+    display: flex;
+    justify-content: center;
+
+}
+.h2_article{
+    display: flex;
+    justify-content: center;
+
+}
+.lien-i{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 1px solid lightgrey;
+    border-width: 20%;
+}
+.p1-i{
+    font-size: 10px;
+}
+.p2-i{
+    font-size: 12px;
+    font-weight: bold;
+}
+.lien-i1{
+    display: flex;   
+    gap: 7px;
+}
+.dollar{
+    color: #FEA116;
+}
+.hr-unique{
+    display: flex;
+    justify-content: center;
+}
+.i11{
+    border-bottom: 1px solid #FEA116;
+}
+
+
