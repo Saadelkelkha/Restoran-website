@@ -14,7 +14,7 @@ The restaurant's responsive site has 8 pages: Home, About, Services, Menu, Reser
 <img src="scr/about-responsive.png">
 
 # Service
-<img src="scr/service.png">
+<img src="service.png">
 <img src="scr/service-responsive.png">
 
 # Menu
